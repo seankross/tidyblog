@@ -1,0 +1,17 @@
+Package: tidyblog
+Type: Package
+Title: A Stupidly Simple Static Blog Generator
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Sean", "Kross", email = "sean@seankross.com", role = c("aut", "cre"))
+    )
+Description: Create an extremely minimalistic blog based solely on R Markdown.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends:
+    R (>= 3.2.0)
+Imports:
+    knitr,
+    rmarkdown,
+    dplyr
+LazyData: true

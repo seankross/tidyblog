@@ -1,0 +1,11 @@
+---
+title: "Tidy Blog"
+output: html_document
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Please do not edit this code chunk.
+
+post_tbl <- read.csv("post_tbl.csv", stringsAsFactors = FALSE)
+knitr::kable(dplyr::arrange(post_tbl, dplyr::desc(Date)))
+```
